@@ -8,7 +8,7 @@
 import Foundation
 
 enum Projects: CaseIterable {
-    case elementaryUI, networkKit, macrosKit, doubleSlit, interference
+    case elementaryUI, networkKit, macrosKit, swift, doubleSlit, interference
     
     static var items: [Project] {
         return allCases.map(\.item)
@@ -46,6 +46,12 @@ extension Projects {
                         url: "https://github.com/buildexperience/NetworkKit"
                     ),
                     body: "Swift framework designed to facilitate the creation and management of Swift macros. It provides a comprehensive set of tools and utilities for defining, implementing, and utilizing macros, streamlining code generation and reducing boilerplate."
+                )
+                
+            case .swift:
+                return Project(
+                    title: "Contributing to Swift",
+                    body: "Diving into the codebase of the Swift programming language with the goal of contributing to the project. It's an exciting challenge as I familiarize myself with the inner workings of Swift"
                 )
                 
             case .doubleSlit:
