@@ -10,7 +10,7 @@ import SwiftUI
 struct ProjectsView: View {
     let items: [Project]
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: 15) {
             Text("Committed to continuous learning and staying current with emerging technologies, I actively experiment with the latest Swift features, watch WWDC labs, and participate in developer communities to adapt to evolving industry standards and enhance my skill set. Additionally, I regularly work on personal projects to engage with new advancements in Swift and SwiftUI:")
             VStack(alignment: .leading, spacing: 15) {
                 ForEach(items) { item in

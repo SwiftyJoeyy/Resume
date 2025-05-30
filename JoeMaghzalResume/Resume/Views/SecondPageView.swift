@@ -10,6 +10,8 @@ import SwiftUI
 struct SecondPageView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            SkillsView(skills: Skills.items)
+                .section("SKILLS")
             TableView(items: Education.items)
                 .section("EDUCATION")
             ProjectsView(items: Projects.items)

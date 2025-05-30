@@ -20,29 +20,30 @@ extension Experience {
         switch self {
             case .toters:
                 return [
-                    "Enhanced maintainability and modularity by refactoring and decoupling network modules using SPM and driving code modularization through the expert application of design patterns.",
-                    "Reduced the number of support chats inquiring about order statuses by 32% and boosted user engagement with real-time updates by developing Live Activities.",
-                    "Saved the company money and unblocked 1k iPad users who were unable to log in by preventing abuse of our OTP endpoints through the implementation of the App Attest service.",
-                    "Increased app stability and performance by profiling the app using Instruments and refactoring components to incorporate SwiftUI and async/awai.",
-                    "Improved user experience and raised the crash-free session rate from 97% to 99.8% by addressing critical crashes that impacted 7.5k+ users.",
-                    "Reduced the need for CI/CD pipeline maintenance by migrating from CircleCI to Xcode Cloud.",
-                    "Enhanced code security, and upheld high code quality standards through thorough collaborative code reviews while delivering impactful & constructive feedback."
+                    "Optimizing Performance & Scalability: Utilizing profiling and debugging techniques to ensure applications are highly responsive, reliable, and can scale effectively under real-world conditions.",
+                    "Code Excellence & Security: Championing high code quality standards, conducting thorough and constructive code reviews, and integrating best practices to secure applications and maintain their robustness.",
+                    "Cross-functional Collaboration: Partnering with product managers, designers, and backend engineers to refine requirements and ensure seamless integration of features, always striving for optimal user experiences.",
+                    "Architectural & UX Insights: Offering valuable feedback on architectural decisions, UX improvements, and performance optimizations to enhance the overall app experience.",
+                    "Driving Development Strategy: Contributing to the team’s success by actively participating in project roadmaps, brainstorming solutions, and offering technical insights on both new and existing features.",
+                    "Building the Future Team: Conducting interviews and assessing top iOS engineering talent to help build and strengthen a high-performance development team.",
+                    "Ensuring Operational Reliability: Quickly identifying, debugging, and resolving production issues to minimize user disruption and maintain a high level of reliability.",
+                    "Innovation & Continuous Improvement: Staying ahead of industry trends, adopting new technologies and best practices, and pushing the envelope on what iOS applications can achieve, ensuring the app and development workflow are always evolving."
                 ]
             case .montyMobile:
                 return [
-                    "Smoothened the user experience of our best-selling app by migrating the codebase from UIKit to SwiftUI, achieving and maintaining a 99% crash-free session rate.",
-                    "Improved our app's data flow management by introducing the Combine framework to our MVVM architecture.",
-                    "Eliminated 1150 repetitive lines of code by implementing custom tools using property wrappers & result builders for a more maintainable codebase.",
-                    "Facilitated the flow of domain and technical knowledge within the team by organizing and leading comprehensive training sessions.",
-                    "Promoted adherence to coding standards and ensured code consistency by conducting code reviews, and providing guidance to team members on collaborative projects.",
-                    "Ensured clear understanding and alignment on project objectives by effectively communicating complex concepts in team settings and cross-functional teamwork."
+                    "Modernized our architecture by integrating Combine into the MVVM stack, streamlining data flow and state management.",
+                    "Spearheaded the development of key product features, consistently optimizing for speed and responsiveness.",
+                    "Integrated backend services and third-party APIs, ensuring reliable data pipelines and seamless real-time updates.",
+                    "Conducted in-depth debugging, testing, and profiling to boost app stability, performance, and memory efficiency.",
+                    "Collaborated closely with designers, PMs, and backend engineers to align technical execution with product vision.",
+                    "Promoted adherence to coding standards & ensured code consistency by conducting code reviews, & providing guidance to team members on collaborative projects.",
                 ]
             case .bimPOS:
                 return [
-                    "Maintained and updated applications written in both Objective-C and Swift, ensuring stability and compatibility across various codebases.",
-                    "Developed applications for Apple Watch, iPhone, and iPad, tailoring user experiences to each platform's unique requirements.",
-                    "Enhanced existing apps by adding Widgets, improving user engagement and accessibility.",
-                    "Managed the deployment process for apps on the App Store, overseeing submission, updates, and compliance with Apple’s guidelines."
+                    "Sustained and modernized legacy codebases by maintaining and updating apps in both Objective-C and Swift, ensuring long-term stability and compatibility.",
+                    "Built platform-optimized experiences for Apple Watch, iPhone, and iPad, adapting features to meet each device’s specific user needs.",
+                    "Enhanced app functionality and engagement through the development of Widgets and improvements in accessibility.",
+                    "Managed the full deployment cycle for App Store releases—including submissions, updates, and ensuring adherence to Apple’s review guidelines."
                 ]
         }
     }
@@ -63,7 +64,7 @@ extension Experience {
                     subTitle: "Monty Mobile",
                     link: LinkItem(url: "https://montymobile.com"),
                     bullets: bullets,
-                    date: "03/2021 - 10/2023",
+                    date: "03/2022 - 10/2023",
                     location: "Beirut, Lebanon"
                 )
             case .bimPOS:
@@ -72,7 +73,7 @@ extension Experience {
                     subTitle: "BIM POS",
                     link: LinkItem(url: "https://bimpos.com"),
                     bullets: bullets,
-                    date: "11/2020 - 03/2021",
+                    date: "11/2021 - 03/2022",
                     location: "Beirut, Lebanon"
                 )
         }
