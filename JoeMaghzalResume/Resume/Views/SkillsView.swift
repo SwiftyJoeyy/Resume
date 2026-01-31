@@ -8,19 +8,17 @@
 import SwiftUI
 
 struct SkillsView: View {
-    let skills: [String]
+    let skills: [SkillSet]
     var body: some View {
-        WrappingHStack(horizontalSpacing: 10) {
-            ForEach(skills, id: \.self) { skill in
-                VStack(spacing: 2) {
-                    Text(skill)
-                        .foregroundStyle(.darkText)
-                        .font(.pdf(.subheadline, weight: .bold))
-                        .padding(.horizontal, 5)
-                    RoundedRectangle(cornerRadius: 1)
-                        .fill(.grey)
-                        .frame(height: 1)
-                }.fixedSize(horizontal: true, vertical: false)
+        VStack(alignment: .leading, spacing: 5) {
+            ForEach(skills) { skill in
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(skill.title)
+                        .foregroundStyle(.prime)
+                        .font(.pdf(.smallHeadline))
+                    Text(skill.skills.joined(separator: " • "))
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
         }
     }
@@ -28,4 +26,10 @@ struct SkillsView: View {
 
 #Preview {
     SkillsView(skills: Skills.items)
+}
+
+struct SkillSet: Identifiable {
+    let id = UUID()
+    let title: String
+    let skills: [String]
 }

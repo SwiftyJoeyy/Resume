@@ -10,18 +10,30 @@ import SwiftUI
 struct ProjectsView: View {
     let items: [Project]
     var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
-            Text("Committed to continuous learning and staying current with emerging technologies, I actively experiment with the latest Swift features, watch WWDC labs, and participate in developer communities to adapt to evolving industry standards and enhance my skill set. Additionally, I regularly work on personal projects to engage with new advancements in Swift and SwiftUI:")
-            VStack(alignment: .leading, spacing: 15) {
+        VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
                 ForEach(items) { item in
                     VStack(alignment: .leading, spacing: 4) {
                         Text(item.title)
                             .foregroundStyle(.prime)
                             .font(.pdf(.headline, weight: .light))
-                        if let link = item.link {
-                            LinkView(item: link)
+                        if !item.links.isEmpty {
+                            HStack(spacing: 10) {
+                                ForEach(item.links) { link in
+                                    LinkView(item: link)
+                                }
+                                Spacer()
+                            }
                         }
-                        Text(item.body)
+                        VStack(alignment: .leading, spacing: 2) {
+                            ForEach(item.bullets, id: \.self) { bullet in
+                                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                                    Text("\u{2022}")
+                                    Text(bullet)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -32,8 +44,8 @@ struct ProjectsView: View {
 struct Project: Identifiable {
     let id = UUID()
     let title: String
-    var link: LinkItem?
-    let body: String
+    var links: [LinkItem]
+    let bullets: [String]
 }
 
 #Preview {

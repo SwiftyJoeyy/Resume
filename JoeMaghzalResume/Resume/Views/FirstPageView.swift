@@ -14,7 +14,7 @@ struct FirstPageView: View {
                 Text("JOE MAGHZAL")
                     .font(.pdf(.title, weight: .bold))
                     .foregroundStyle(.prime)
-                Text("iOS Engineer")
+                Text("Swift Engineer | Compiler Contributor")
                     .font(.pdf(.headline, weight: .bold))
                     .foregroundStyle(.second)
                 HeaderItemsView(items: Header.items)

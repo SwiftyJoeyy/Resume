@@ -17,6 +17,9 @@ enum PDFFontStyle: Double {
     /// 12
     case headline = 12
     
+    /// 10
+    case smallHeadline = 10
+    
     /// 9
     case subheadline = 9
     

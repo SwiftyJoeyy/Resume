@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Experience: CaseIterable {
-    case toters, montyMobile, bimPOS
+    case anghami, toters, montyMobile, bimPOS
     
     static var items: [TableItem] {
         return allCases.map(\.item)
@@ -18,44 +18,54 @@ enum Experience: CaseIterable {
 extension Experience {
     var bullets: [String] {
         switch self {
+            case .anghami:
+                return [
+                    "Architected and implemented modern networking infrastructure using Swift macros for the app rewrite, designing type-safe, declarative APIs that reduced boilerplate by 25% and improved compile-time validation.",
+                    "Designed a high performance download system with scheduler architecture supporting priority queuing, parallel download control which reduced downloads issues by 80% and improved download speed by 35%.",
+                    "Led design system modernization project with 2 mid-level engineers, architecting a SwiftUI inspired style-based component library that reduced implementation complexity by 70% and improved design consistency across our applications.",
+                    "Integrated iOS 26 liquid glass materials into OSN+ UI, adopting the latest system-provided visual effects APIs to modernize the app's aesthetic and align with platform design language.",
+                    "Mentored engineers through pair programming sessions and code reviews, reducing PR complexity and driving 3x performance improvements in animations through systematic refactoring and optimization.",
+                ]
             case .toters:
                 return [
-                    "Optimizing Performance & Scalability: Utilizing profiling and debugging techniques to ensure applications are highly responsive, reliable, and can scale effectively under real-world conditions.",
-                    "Code Excellence & Security: Championing high code quality standards, conducting thorough and constructive code reviews, and integrating best practices to secure applications and maintain their robustness.",
-                    "Cross-functional Collaboration: Partnering with product managers, designers, and backend engineers to refine requirements and ensure seamless integration of features, always striving for optimal user experiences.",
-                    "Architectural & UX Insights: Offering valuable feedback on architectural decisions, UX improvements, and performance optimizations to enhance the overall app experience.",
-                    "Driving Development Strategy: Contributing to the team’s success by actively participating in project roadmaps, brainstorming solutions, and offering technical insights on both new and existing features.",
-                    "Building the Future Team: Conducting interviews and assessing top iOS engineering talent to help build and strengthen a high-performance development team.",
-                    "Ensuring Operational Reliability: Quickly identifying, debugging, and resolving production issues to minimize user disruption and maintain a high level of reliability.",
-                    "Innovation & Continuous Improvement: Staying ahead of industry trends, adopting new technologies and best practices, and pushing the envelope on what iOS applications can achieve, ensuring the app and development workflow are always evolving."
+                    "Spearheaded technical modernization by architecting and planning team-wide migration from UIKit to SwiftUI, designing the MVVM architecture pattern to be adopted, and introducing Swift Concurrency to improve code maintainability and development velocity while reducing callback complexity by 60%.",
+                    "Led performance optimization initiatives that reduced app launch time by 35% and improved crash-free rate from 95% to 99.5%, across 500K+ active users.",
+                    "Implemented modular SPM infrastructure, AppAttest security integration, and owned CI/CD pipeline management while conducting code reviews for 10 iOS engineers.",
+                    "Partnered cross-functionally beyond development: collaborated with product team on requirements definition, advised UI/UX team on interface design, and mentored engineers on technical implementation.",
+                    "Conducted technical interviews and evaluated iOS engineering candidates, contributing to hiring decisions that strengthened team capabilities."
                 ]
             case .montyMobile:
                 return [
-                    "Modernized our architecture by integrating Combine into the MVVM stack, streamlining data flow and state management.",
-                    "Spearheaded the development of key product features, consistently optimizing for speed and responsiveness.",
-                    "Integrated backend services and third-party APIs, ensuring reliable data pipelines and seamless real-time updates.",
-                    "Conducted in-depth debugging, testing, and profiling to boost app stability, performance, and memory efficiency.",
-                    "Collaborated closely with designers, PMs, and backend engineers to align technical execution with product vision.",
-                    "Promoted adherence to coding standards & ensured code consistency by conducting code reviews, & providing guidance to team members on collaborative projects.",
+                    "Migrated 20+ screens to Combine-based MVVM, reducing state-related bugs by 45% while optimizing API integration patterns that decreased response handling time by 30%.",
+                    "Enhanced app stability through debugging and profiling, achieving 25% reduction in memory footprint and resolving critical performance bottlenecks.",
+                    "Championed code quality through reviews and mentorship, establishing coding standards that improved team productivity and reduced technical debt."
                 ]
             case .bimPOS:
                 return [
-                    "Sustained and modernized legacy codebases by maintaining and updating apps in both Objective-C and Swift, ensuring long-term stability and compatibility.",
-                    "Built platform-optimized experiences for Apple Watch, iPhone, and iPad, adapting features to meet each device’s specific user needs.",
-                    "Enhanced app functionality and engagement through the development of Widgets and improvements in accessibility.",
-                    "Managed the full deployment cycle for App Store releases—including submissions, updates, and ensuring adherence to Apple’s review guidelines."
+                    "Maintained and modernized legacy codebases across Objective-C and Swift, ensuring stability and compatibility with latest iOS releases.",
+                    "Developed multi-platform experiences for Apple Watch, iPhone, and iPad with WidgetKit extensions and full VoiceOver accessibility compliance.",
+                    "Managed App Store release lifecycle including submissions and updates, maintaining 100% approval rate."
                 ]
         }
     }
     var item: TableItem {
         switch self {
+            case .anghami:
+                return TableItem(
+                    title: "Senior iOS Engineer",
+                    subTitle: "Anghami & OSN+",
+                    link: LinkItem(url: "https://www.anghami.com"),
+                    bullets: bullets,
+                    date: "8/2025 - Present",
+                    location: "Zalka, Lebanon"
+                )
             case .toters:
                 return TableItem(
                     title: "iOS Engineer",
                     subTitle: "Toters",
                     link: LinkItem(url: "https://www.totersapp.com"),
                     bullets: bullets,
-                    date: "11/2023 - Present",
+                    date: "11/2023 - 8/2025",
                     location: "Zalka, Lebanon"
                 )
             case .montyMobile:

@@ -21,8 +21,8 @@ extension Education {
             case .lebaneseUniversity:
                 return [
                     "Acquired proficiency in applying mathematical frameworks to analyze and solve complex physical problems.",
-                    "Learned experimental design techniques and data analysis methods through hands-on laboratory experiences.",
-                    "Developed a systematic approach to problem-solving, utilizing analytical thinking and logical reasoning to address complex challenges.",
+                    "Developed strong analytical and problem-solving skills applicable to compiler optimization and algorithm design.",
+                    "Applied computational methods and simulation techniques, bridging theory and implementation.",
                 ]
         }
     }
@@ -34,7 +34,7 @@ extension Education {
                     subTitle: "Lebanese University",
                     bullets: bullets,
                     date: "10/2020 - 07/2024",
-                    location: "Zalka, Lebanon"
+                    location: "Fanar, Lebanon"
                 )
         }
     }
